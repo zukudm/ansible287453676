@@ -1,5 +1,5 @@
 - name: Hello World Sample
-  hosts: localhost 
+  hosts: "{{ host }}"
   tasks:
     - name: Hello Message
       debug:
