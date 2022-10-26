@@ -2,7 +2,8 @@
   hosts: "{{ host }}"
   tasks:
 
-  - name: apt update
+  - name: apt update 2
+    become: yes
     apt:
       update_cache: yes
 
