@@ -2,6 +2,10 @@
   hosts: "{{ host }}"
   tasks:
 
+  - name: apt update
+    apt:
+      update_cache: yes
+
   - name: install prerequisites for Docker repository
     become: yes
     ansible.builtin.apt:
