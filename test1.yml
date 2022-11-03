@@ -1,5 +1,4 @@
 - name: Hello World Sample
-  hosts: "{{ host }}" 
   vars_files: vars/vars.yaml
   hosts: "{{ host }}"
   tasks:
