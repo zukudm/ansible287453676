@@ -1,10 +1,7 @@
 - name: Hello World Sample
-<<<<<<< HEAD
   hosts: "{{ host }}" 
   vars_files: vars/vars.yaml
-=======
   hosts: "{{ host }}"
->>>>>>> 4aa67914045c908f22fb5c622fd6dd32e821600e
   tasks:
     - name: Hello Message
       debug:
