@@ -37,6 +37,12 @@
         - docker-ce-cli
         - containerd.io
         - docker-compose-plugin
+        - python3-pip
+      state: present
+
+  - name: install docker pip package
+    pip:
+      name: docker
       state: present
 
   - name: start and enable docker daemon
