@@ -1,0 +1,8 @@
+- name: Install docker
+  hosts: "{{ host }}"
+  tasks:
+
+  - name: Test1
+    community.docker.docker_container:
+    name: geth123
+    state: stopped
