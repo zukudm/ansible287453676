@@ -2,7 +2,7 @@
   hosts: "{{ host }}"
   tasks:
 
-  - name: Test1
-    community.docker.docker_container:
-    name: geth123
-    state: stopped
+    - name: Test1
+      community.docker.docker_container:
+      name: geth123
+      state: stopped
