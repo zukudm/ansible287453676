@@ -3,6 +3,6 @@
   tasks:
 
     - name: Test1
-      docker.docker_container:
+      community.docker.docker_container:
         name: geth123
         state: stopped
