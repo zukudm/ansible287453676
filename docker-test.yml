@@ -6,4 +6,4 @@
     - name: Test1
       community.docker.docker_container:
         name: geth123
-        state: stopped
+        state: started
