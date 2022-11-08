@@ -1,5 +1,6 @@
 - name: Install docker
   hosts: "{{ host }}"
+  become: yes
   tasks:
 
     - name: Test1
