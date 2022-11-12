@@ -1,8 +1,13 @@
 - name: Hello World Sample
   vars_files: 
     - vars/vars.yml
+  vars_prompt:
+    - name: password
+      prompt: What is your password?
+      private: no
+      default: Defaultpassword
   hosts: "{{ host }}"
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello World!"
+        msg: "{{ password }}"
