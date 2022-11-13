@@ -2,7 +2,7 @@
   vars_files: 
     - vars/vars.yml
   vars_prompt:
-    - name: password
+    - name: passwordqqqqqqqqqqqqq
       prompt: What is your password?
       private: no
       default: Defaultpassword
