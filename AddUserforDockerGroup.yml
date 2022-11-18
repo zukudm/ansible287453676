@@ -1,8 +1,8 @@
 - name: Make user to run docker without root perm
   hosts: "{{ host }}"
   vars:
-    docker_group: docker
-    docker_user: vagrant
+      docker_group: docker
+      docker_user: vagrant
   tasks:
 
   - name: Ensure group "docker" exists
@@ -11,8 +11,8 @@
       state: present
 
   - name: Add the user to the docker group
-  ansible.builtin.user:
-    name: "{{ docker_user }}"
-    comment: John Doe
-    append: yes
-    group: "{{ docker_group }}"   
+    ansible.builtin.user:
+      name: "{{ docker_user }}"
+      comment: John Doe
+      append: yes
+      group: "{{ docker_group }}"   
