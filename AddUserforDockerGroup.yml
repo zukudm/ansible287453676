@@ -16,4 +16,4 @@
       name: "{{ docker_user }}"
       comment: John Doe
       append: yes
-      group: "{{ docker_group }}"   
+      groups: "{{ docker_group }}"   
