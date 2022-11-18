@@ -1,5 +1,6 @@
 - name: Make user to run docker without root perm
   hosts: "{{ host }}"
+  become: yes
   vars:
       docker_group: docker
       docker_user: vagrant
