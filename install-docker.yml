@@ -38,6 +38,7 @@
         - containerd.io
         - docker-compose-plugin
         - python3-docker
+        - docker-compose
       state: present
 
   - name: start and enable docker daemon
