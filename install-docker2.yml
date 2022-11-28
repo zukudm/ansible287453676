@@ -22,6 +22,7 @@
 
   roles:
     - role:  geerlingguy.docker
+      become: yes
   vars:
     docker_edition: 'ce'
     docker_packages:
