@@ -3,7 +3,7 @@
   vars_files: 
     - vars/vars.yml
 
-  tasks:
+  pre_tasks:
 
   - name: apt update 2
     become: yes
@@ -19,7 +19,7 @@
         - gnupg2
         - lsb-release
 
-        
+
   roles:
     - role:  geerlingguy.docker
   vars:
