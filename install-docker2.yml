@@ -1,5 +1,6 @@
 - name: Install docker stuff using external role
   hosts: "{{ host }}"
+  become: yes
   vars_files: 
     - vars/vars.yml
 
